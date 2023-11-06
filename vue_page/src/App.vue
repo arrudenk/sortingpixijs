@@ -13,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         // Here will be the link to the app with pixijs in it
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/project0"> Project 0 </RouterLink>
       </nav>
     </div>
   </header>
