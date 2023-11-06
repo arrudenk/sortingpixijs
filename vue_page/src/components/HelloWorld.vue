@@ -8,7 +8,7 @@ defineProps<{
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      Hello world . vue 11
+      This is my short summary
     </h3>
   </div>
 </template>
