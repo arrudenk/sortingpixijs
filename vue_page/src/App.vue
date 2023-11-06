@@ -10,10 +10,11 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
       <HelloWorld msg="Hello my name is Artem Rudenko"/>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        // Here will be the link to the app with pixijs in it
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/project0"> Project 0 </RouterLink>
+        <ul>
+          <li><RouterLink to="/">Home</RouterLink></li>
+          <li><RouterLink to="/about">About</RouterLink></li>
+          <li><RouterLink to="/project0">Project 0</RouterLink></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -72,6 +73,38 @@ nav a:first-of-type {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin-bottom: 10px; /* Add space between the list items */
+  }
+
+  nav li:last-child {
+    margin-bottom: 0; /* Remove margin for the last item to prevent extra spacing at the bottom */
+  }
+
+  nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+    display: block; /* Make the links fill the width of the list item */
+    padding: 5px 0; /* Add some padding for better clickability */
+  }
+
+  nav a:hover {
+    color: #007bff; /* Change color on hover */
+    background-color: #f8f9fa; /* Optional: Add a background color on hover */
+  }
+
+  /* Add some padding and possibly a border to the nav element if you like */
+  nav {
+    padding: 20px;
+    border-right: 1px solid #ddd; /* Optional: Add a right border */
   }
 
   nav {
